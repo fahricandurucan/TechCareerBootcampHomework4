@@ -27,12 +27,14 @@ class AnasayfaFragment : Fragment() {
         binding.rv.layoutManager = StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL)
 
         var ilanListesi = ArrayList<Ilan>()
-        var i1 = Ilan("ps","PlayStation","6.500 Tl")
-        var i2 = Ilan("ilanaraba","Araba","6.500 Tl")
-        var i3 = Ilan("ps","PlayStation","6.500 Tl")
-        var i4 = Ilan("ps","PlayStation","6.500 Tl")
-        var i5 = Ilan("ps","PlayStation","6.500 Tl")
-        var i6 = Ilan("ps","PlayStation","6.500 Tl")
+        var i1 = Ilan("ilanps","PS4 Pro","6.500 TL","Muğla")
+        var i2 = Ilan("ilanaraba","Renault Fluence 2011","415.500 TL","Köyceğiz")
+        var i3 = Ilan("ilanbuzdolabi","Sağlam Buzdolabı","1.900 TL","Muğla")
+        var i4 = Ilan("ilancaydanlik","Arçelik Tiryaki Çaydanlık","1.700 TL","Marmaris")
+        var i5 = Ilan("ilanfotomakinesi","Canon 600d","3.500 TL","Muğla")
+        var i6 = Ilan("ilanraket","Selex Tenis Raketi","650 TL","Köyceğiz")
+        var i7 = Ilan("ilantelefon","14 pro max 128gb","27.250 TL","Muğla")
+        var i8 = Ilan("ilanvitrin","Vitrin","500 TL","Muğla")
 
         ilanListesi.add(i1)
         ilanListesi.add(i2)
@@ -40,6 +42,8 @@ class AnasayfaFragment : Fragment() {
         ilanListesi.add(i4)
         ilanListesi.add(i5)
         ilanListesi.add(i6)
+        ilanListesi.add(i7)
+        ilanListesi.add(i8)
 
         val adapterIlan = IlanAdapter(requireContext(),ilanListesi)
         binding.rv.adapter = adapterIlan

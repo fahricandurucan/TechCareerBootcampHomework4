@@ -101,7 +101,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:menu="@menu/toolbar_menu"
-                    app:navigationIcon="@drawable/baseline_location_on_24"
+                    app:navigationIcon="@drawable/location_icon"
                     app:title="Pabuçcular Sk. 12, 48050 Muğla"
                     app:titleTextColor="@color/yazi3" />
 
@@ -147,8 +147,9 @@
                 android:id="@+id/bottomNavigationView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="16dp"
+                android:layout_marginRight="20dp"
                 android:background="@drawable/transparent_background"
+                app:labelVisibilityMode="labeled"
                 app:menu="@menu/bottom_nav_menu" />
         </com.google.android.material.bottomappbar.BottomAppBar>
 

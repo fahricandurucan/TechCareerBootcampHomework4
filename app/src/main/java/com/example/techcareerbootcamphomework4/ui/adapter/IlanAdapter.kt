@@ -29,6 +29,7 @@ class IlanAdapter(var mContext:Context,var ilanList: List<Ilan>)
         t.imageView5.setImageResource(mContext.resources.getIdentifier(data.image,"drawable",mContext.packageName))
         t.textViewFiyat.text = data.price
         t.textViewName.text = data.name
+        t.textViewSehir.text = data.sehir
 
     }
 

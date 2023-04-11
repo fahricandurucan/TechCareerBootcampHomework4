@@ -21,13 +21,13 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textViewSehir"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp"
-                android:text="Muğla"
+                android:text="TextView"
                 android:textColor="@color/yazi3"
                 android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="parent"

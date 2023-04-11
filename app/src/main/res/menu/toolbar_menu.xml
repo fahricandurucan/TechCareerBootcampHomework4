@@ -5,7 +5,7 @@
     <item
         android:id="@+id/arrow_bottom"
         android:title="search"
-        android:icon="@drawable/baseline_arrow_drop_down_24"
+        android:icon="@drawable/arrow_icon"
         android:contentDescription="search"
         app:showAsAction="ifRoom"></item>
 

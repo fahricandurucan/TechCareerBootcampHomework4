@@ -7,99 +7,140 @@
 
     </data>
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp">
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbarAnasayfa"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:minHeight="?attr/actionBarSize"
-                android:theme="?attr/actionBarTheme"
-                app:guidelineUseRtl="true"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:menu="@menu/toolbar_menu"
-                app:navigationIcon="@drawable/baseline_location_on_24"
-                app:title="Pabuçcular Sk. 12, Muğla "
-                app:titleTextColor="@color/black" />
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/layoutSearch"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="24dp"
-                app:boxBackgroundColor="@color/white"
-                app:boxBackgroundMode="outline"
-                app:boxCornerRadiusBottomEnd="20dp"
-                app:boxCornerRadiusBottomStart="20dp"
-                app:boxCornerRadiusTopEnd="20dp"
-                app:boxCornerRadiusTopStart="20dp"
-                app:endIconDrawable="@drawable/baseline_search_24"
-                app:endIconMode="custom"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toolbarAnasayfa"
-                app:startIconDrawable="@drawable/baseline_search_24">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarAnasayfa"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:hint="Araba, telefon, bisiklet ve daha fazlası..." />
-            </com.google.android.material.textfield.TextInputLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                    android:background="@color/white"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="?attr/actionBarTheme"
+                    app:guidelineUseRtl="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:menu="@menu/toolbar_menu"
+                    app:navigationIcon="@drawable/baseline_location_on_24"
+                    app:title="Pabuçcular Sk. 12, Muğla "
+                    app:titleTextColor="@color/black" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:endIconDrawable="@drawable/baseline_search_24"
+                    app:endIconMode="custom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbarAnasayfa"
+                    app:startIconDrawable="@drawable/baseline_search_24">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Araba, telefon, bisiklet ve daha fazlası..." />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvKategori"
+                    android:layout_width="301dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.333"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layoutSearch" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--            <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content">-->
+
+            <!--               -->
+
+
+            <!--                <com.google.android.material.bottomappbar.BottomAppBar-->
+            <!--                    android:id="@+id/bottomAppbar"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center|bottom"-->
+            <!--                    android:backgroundTint="@android:color/transparent"-->
+            <!--                    app:contentInsetStart="0dp">-->
+            <!--                    &lt;!&ndash;            app:fabCradleMargin="10dp"&ndash;&gt;-->
+            <!--                    &lt;!&ndash;            app:fabCradleRoundedCornerRadius="10dp"&ndash;&gt;-->
+            <!--                    &lt;!&ndash;            app:fabCradleVerticalOffset="10dp"&ndash;&gt;-->
+            <!--                    &lt;!&ndash;            app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+            <!--                    &lt;!&ndash;            app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+            <!--                    &lt;!&ndash;            app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+            <!--                    &lt;!&ndash;            tools:ignore="BottomAppBar"&ndash;&gt;-->
+
+
+            <!--                    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+            <!--                        android:id="@+id/bottomNavigationView"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_marginRight="16dp"-->
+            <!--                        android:background="@drawable/transparent_background"-->
+            <!--                        app:menu="@menu/bottom_nav_menu">-->
+
+            <!--                    </com.google.android.material.bottomnavigation.BottomNavigationView>-->
+            <!--                </com.google.android.material.bottomappbar.BottomAppBar>-->
+
+            <!--                <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+            <!--                    android:id="@+id/fab"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:contentDescription="@string/app_name"-->
+            <!--                    android:src="@drawable/person_icon"-->
+            <!--                    app:layout_anchor="@id/bottomAppbar"-->
+            <!--                    tools:ignore="MissingConstraints" />-->
+
+
+            <!--            </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
-        <com.google.android.material.bottomappbar.BottomAppBar
-            android:id="@+id/bottomAppbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|bottom"
-            app:contentInsetStart="0dp"
-            android:backgroundTint="@android:color/transparent">
-<!--            app:fabCradleMargin="10dp"-->
-<!--            app:fabCradleRoundedCornerRadius="10dp"-->
-<!--            app:fabCradleVerticalOffset="10dp"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            tools:ignore="BottomAppBar"-->
 
-
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/bottomNavigationView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="16dp"
-                android:background="@drawable/transparent_background"
-                app:menu="@menu/bottom_nav_menu">
-
-            </com.google.android.material.bottomnavigation.BottomNavigationView>
-        </com.google.android.material.bottomappbar.BottomAppBar>
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_anchor="@id/bottomAppbar"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/person_icon"
-            tools:ignore="MissingConstraints" />
-
-
-
-
-
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

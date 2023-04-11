@@ -19,9 +19,9 @@ class AnasayfaFragment : Fragment() {
         binding = FragmentAnasayfaBinding.inflate(inflater, container, false)
 
 
-        binding.toolbarAnasayfa.title = "ewlkfmwklefjwe"
-        binding.rv.layoutManager = StaggeredGridLayoutManager(1,StaggeredGridLayoutManager.HORIZONTAL)
-        binding.rvKategori.layoutManager = StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL)
+//        binding.toolbarAnasayfa.title = "ewlkfmwklefjwe"
+        binding.rv.layoutManager = StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL)
+        binding.rvKategori.layoutManager = StaggeredGridLayoutManager(1,StaggeredGridLayoutManager.HORIZONTAL)
 
 
         val ilanListesi = ArrayList<Kategori>()
@@ -29,11 +29,18 @@ class AnasayfaFragment : Fragment() {
         val i2 = Kategori("yyyyyy")
         val i3 = Kategori("zzzzz")
         val i4 = Kategori("xxxxx")
+        val i5 = Kategori("xxxxx")
+        val i6 = Kategori("xxxxx")
+        val i7 = Kategori("xxxxx")
+
 
         ilanListesi.add(i1)
         ilanListesi.add(i2)
         ilanListesi.add(i3)
         ilanListesi.add(i4)
+        ilanListesi.add(i5)
+        ilanListesi.add(i6)
+        ilanListesi.add(i7)
         val adapter2 = KategoriAdapter(requireContext(),ilanListesi)
         binding.rv.adapter = adapter2
 
@@ -42,33 +49,13 @@ class AnasayfaFragment : Fragment() {
         val k2 = Kategori("yyyyyy")
         val k3 = Kategori("zzzzz")
         val k4 = Kategori("xxxxx")
-        val k5 = Kategori("yyyyyy")
-        val k6 = Kategori("zzzzz")
-        val k7 = Kategori("xxxxx")
-        val k8 = Kategori("yyyyyy")
-        val k9 = Kategori("zzzzz")
-        val k10 = Kategori("xxxxx")
-        val k11 = Kategori("yyyyyy")
-        val k12 = Kategori("zzzzz")
-        val k13 = Kategori("xxxxx")
-        val k14 = Kategori("yyyyyy")
-        val k15 = Kategori("zzzzz")
+
 
         kategoriListesi.add(k1)
         kategoriListesi.add(k2)
         kategoriListesi.add(k3)
         kategoriListesi.add(k4)
-        kategoriListesi.add(k5)
-        kategoriListesi.add(k6)
-        kategoriListesi.add(k7)
-        kategoriListesi.add(k8)
-        kategoriListesi.add(k9)
-        kategoriListesi.add(k10)
-        kategoriListesi.add(k11)
-        kategoriListesi.add(k12)
-        kategoriListesi.add(k13)
-        kategoriListesi.add(k14)
-        kategoriListesi.add(k14)
+
 
         val adapter = KategoriAdapter(requireContext(),kategoriListesi)
         binding.rvKategori.adapter = adapter

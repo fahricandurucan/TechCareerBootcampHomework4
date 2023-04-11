@@ -29,6 +29,7 @@ class KategoriAdapter(var mContext: Context, var kategoriListesi:List<Kategori>)
         var data =kategoriListesi.get(position)
         val t = holder.binding
 
-        t.textViewKategori.text = data.txt
+        t.imageView4.setImageResource(mContext.resources.getIdentifier(data.image,"drawable",mContext.packageName))
+        t.textView2.text = data.title
     }
 }

@@ -67,9 +67,10 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="color" value="ffffff" />
-                                                <entry key="imagePath" value="C:\Users\Fahrican\AppData\Local\Temp\baseline_sports_baseball_24.xml" />
-                                                <entry key="scalingPercent" value="73" />
+                                                <entry key="color" value="7f7d7d" />
+                                                <entry key="imagePath" value="C:\Users\Fahrican\AppData\Local\Temp\baseline_favorite_border_24.xml" />
+                                                <entry key="scalingPercent" value="83" />
+                                                <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -80,7 +81,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/sports_baseball/baseline_sports_baseball_24.xml" />
+                                                <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/favorite_border/baseline_favorite_border_24.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -124,10 +125,10 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="3ed251" />
+                                      <entry key="backgroundColor" value="ffffff" />
                                       <entry key="foregroundAssetType" value="CLIP_ART" />
                                       <entry key="legacyIconShape" value="CIRCLE" />
-                                      <entry key="outputName" value="spor_icon" />
+                                      <entry key="outputName" value="like_icon" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -321,7 +322,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/person/baseline_person_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/camera_alt/baseline_camera_alt_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -331,9 +332,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="7f7d7d" />
+                            <entry key="color" value="ffffff" />
                             <entry key="opacityPercent" value="99" />
-                            <entry key="outputName" value="person_icon" />
+                            <entry key="outputName" value="camera_icon" />
                             <entry key="sourceFile" value="C:\Users\Fahrican\KotlinProjects\TechCareerBootcampHomework4" />
                           </map>
                         </option>

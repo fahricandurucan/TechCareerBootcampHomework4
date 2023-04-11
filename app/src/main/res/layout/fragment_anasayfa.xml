@@ -23,9 +23,11 @@
                     android:id="@+id/textViewIlan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="14dp"
                     android:layout_marginTop="8dp"
                     android:text="Güncel İlanlar"
+                    android:textColor="@color/yazi4"
+                    android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/rvKategori" />
 
@@ -33,9 +35,13 @@
                     android:id="@+id/textViewKategori2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="14dp"
+                    android:fontFamily="sans-serif"
                     android:text="Tümünü gör"
-                    android:textColor="@color/design_default_color_error"
+                    android:textColor="@color/yazi2"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -43,8 +49,12 @@
                     android:id="@+id/textViewKategori"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif"
                     android:text="Kategorilere Göz At"
+                    android:textColor="@color/yazi4"
+                    android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -52,16 +62,16 @@
                     android:id="@+id/rv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="4dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/rvKategori" />
+                    app:layout_constraintTop_toBottomOf="@+id/textViewIlan" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvKategori"
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textViewKategori" />
@@ -92,28 +102,28 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:menu="@menu/toolbar_menu"
                     app:navigationIcon="@drawable/baseline_location_on_24"
-                    app:title="Pabuçcular Sk. 12, Muğla "
-                    app:titleTextColor="@color/black" />
+                    app:title="Pabuçcular Sk. 12, 48050 Muğla"
+                    app:titleTextColor="@color/yazi3" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/layoutSearch"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_marginStart="24dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="24dp"
+                    android:layout_marginEnd="8dp"
                     app:boxBackgroundColor="@color/white"
                     app:boxBackgroundMode="outline"
-                    app:boxCornerRadiusBottomEnd="20dp"
-                    app:boxCornerRadiusBottomStart="20dp"
-                    app:boxCornerRadiusTopEnd="20dp"
-                    app:boxCornerRadiusTopStart="20dp"
-                    app:endIconDrawable="@drawable/baseline_search_24"
+                    app:boxCornerRadiusBottomEnd="10dp"
+                    app:boxCornerRadiusBottomStart="10dp"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:endIconDrawable="@drawable/notification_icon"
                     app:endIconMode="custom"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/toolbarAnasayfa"
-                    app:startIconDrawable="@drawable/baseline_search_24">
+                    app:startIconDrawable="@drawable/search_icon">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -129,7 +139,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            app:fabCradleMargin="16dp"
+            app:fabCradleMargin="0dp"
             app:fabCradleRoundedCornerRadius="10dp"
             app:fabCradleVerticalOffset="10dp">
 
@@ -146,8 +156,10 @@
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/person_icon"
+            android:src="@drawable/camera_icon"
+            app:backgroundTint="@color/anaRenk"
             app:layout_anchor="@id/bottomAppbar"
+            app:tint="@color/white"
             tools:ignore="SpeakableTextPresentCheck" />
 
 

@@ -28,7 +28,7 @@ class AnasayfaFragment : Fragment() {
 
         var ilanListesi = ArrayList<Ilan>()
         var i1 = Ilan("ps","PlayStation","6.500 Tl")
-        var i2 = Ilan("ps","PlayStation","6.500 Tl")
+        var i2 = Ilan("ilanaraba","Araba","6.500 Tl")
         var i3 = Ilan("ps","PlayStation","6.500 Tl")
         var i4 = Ilan("ps","PlayStation","6.500 Tl")
         var i5 = Ilan("ps","PlayStation","6.500 Tl")

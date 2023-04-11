@@ -7,4 +7,20 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    // My Colors
+
+    <color name="yazi1">#000000</color>
+    <color name="yazi2">#EE3348</color>
+    <color name="yazi3">#7C7878</color>
+    <color name="yazi4">#1E1E1E</color>
+
+    <color name="anaRenk">#EE3348</color>
+
+
+
+
+
+
 </resources>
